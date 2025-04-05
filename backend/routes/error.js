@@ -1,8 +1,8 @@
 import express from 'express'
-import {register} from "../controllers/auth.js"
+import {treciZad} from "../controllers/error.js"
 
 const router = express.Router()
 
-router.post("/register",register)
+router.get("/error_files",treciZad)
 
 export default router

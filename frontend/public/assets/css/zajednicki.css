@@ -1,0 +1,87 @@
+.chk_odgovor{
+	width: 35px; 
+	height: 35px;
+}
+
+.dodati_chk{
+	margin-top: 35px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+#prijavaTestDiv {
+	margin-top: 3%;
+}
+
+.alertDiv {
+	margin-top: 3%;
+}
+
+.panel-container {
+	margin-bottom: 1%;
+}
+
+.panel {
+	background: #cccccc;
+	padding: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.panel-solved {
+	background: #6bbaae !important;
+}
+
+.tekst-pitanja {
+	font-size: 16px;
+}
+.cng1{
+	width: 100% !important;
+    margin: 0 auto !important;
+}
+.cng2{
+	width: 900px !important;
+    margin: 0 auto !important;
+}
+.cng3{
+	overflow-x: scroll !important;
+}
+.cng5{
+	width: 700px !important;
+    margin: 0 auto !important;
+}
+.ubaci{
+	margin-bottom: 7px;
+}
+.justify{
+	justify-content: center;
+}
+
+.napomena{
+    color: green;
+    text-align: center;
+    width: 900px;
+    margin: 18px auto !important;
+    font-weight: normal;
+    font-size: 16px;
+}
+@media screen and (max-width:950px) {
+	.cng2,.cng5{
+		width: 90% !important;
+	}	
+	.napomena{
+		width: auto;
+	}
+}
+@media screen and (max-width:500px) {
+	.cng4{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.w100{
+		width: 100%;
+	}	
+}

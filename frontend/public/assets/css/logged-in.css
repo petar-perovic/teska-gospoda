@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+}
+.odjava{
+    font-size: 20px;
+    font-family: "Poppins","Source Sans Pro","Helvetica Neue","Sans Serif"!important;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: var(--color-default);
+    padding: 5px 3px;
+    position: relative;
+}
+.border{
+    display: none; 
+    position: absolute;
+    height: 4px;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    background-color: var(--color-primary);
+}
+.odjava:hover{
+    color: var(--color-default);
+   
+}
+.odjava:hover .border{
+    display: block;
+}
+
+.bigger-container {
+    flex-wrap: wrap;
+    background-color: #eee;
+    font-family: "Poppins","Source Sans Pro","Helvetica Neue","Sans Serif"!important;
+    display: flex;
+    width: 1320px;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 60vh;
+    margin: 100px auto 0;
+}
+@media screen and (max-width:1399px) {
+    .bigger-container{
+        width: 1140px;
+    }
+}
+@media screen and (max-width:1199px) {
+    .bigger-container{
+        width: 960px;
+    }
+}
+@media screen and (max-width:991px) {
+    .bigger-container{
+        width: 720px;
+    }
+}
+@media screen and (max-width:767px) {
+    .bigger-container{
+        width: 540px;
+    }
+}
+@media screen and (max-width:575px) {
+    .bigger-container{
+        width: 100%;
+    }
+}
+
+.naslov h2{
+	font-family: "Poppins","Source Sans Pro","Helvetica Neue","Sans Serif"!important;
+	font-size: 2em !important;
+	margin-top: 0.83em !important; 
+    margin-bottom: 0.83em !important; 
+    font-weight: bolder !important; 
+    color: black;
+    color: #000;
+
+}
+.wrapper {
+	background-color: #fff;
+	border-radius: 5px;
+    box-shadow: 0 8px 28px rgba(2, 48, 32, 0.7);
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+	border: 3px solid #2ecc71;
+    margin-bottom: 20px;
+}
+.wrapper:nth-of-type(2){
+    border: 3px solid #e74c3c;
+    box-shadow: 0 8px 28px rgba(231, 76, 60, 0.7);
+}
+@media screen and (max-width:430px) {
+	.wrapper{
+		max-width: 83%;
+	}
+}
+
+h2{
+	text-align: center;
+}
+
+.form {
+	padding: 30px 40px;	
+}
+
+.form-control {
+	margin-bottom: 15px;
+	padding: 0 0 20px 0 !important; 
+	position: relative;
+	border: none !important;
+	color: #212529 !important;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+	color: #114d4d !important;
+}
+
+.form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+/*Ovaj selektor trazi sve input elemente koji se nalaze unutar elementa koji ima klasu form-control i koji takodje ima i klasu success */
+
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form [type='submit'] {
+	background-color: #2ecc71;
+	border: 2.5px solid #114d4d;
+	border-radius: 40px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.submit{
+	cursor: pointer;
+}
+.submit:active{
+	background-color: #114d4d;
+}

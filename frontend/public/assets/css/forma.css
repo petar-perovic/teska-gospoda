@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+.bigger-container {
+	background-color: #eee;
+	font-family: "Poppins","Source Sans Pro","Helvetica Neue","Sans Serif"!important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+@media screen and (max-height:720px) {
+	.bigger-container{
+		padding-top: 55px;
+	}
+}
+@media screen and (max-height:655px) {
+	.bigger-container{
+		padding-top: 85px;
+	}
+}
+.naslov{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.naslov h2{
+	font-family: "Poppins","Source Sans Pro","Helvetica Neue","Sans Serif"!important;
+	font-size: 2em !important;
+	margin-top: 0.83em !important; 
+    margin-bottom: 0.83em !important; 
+    font-weight: bolder !important; 
+
+}
+.wrapper {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 8px 28px #114d4d;
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+	border: 1px solid #49ADA1;
+}
+
+@media screen and (max-width:430px) {
+	.wrapper{
+		max-width: 83%;
+	}
+	.row{
+		width: 83% !important;
+	}
+}
+
+h2{
+	text-align: center;
+}
+
+.form {
+	padding: 30px 40px;	
+}
+
+.form-control {
+	margin-bottom: 15px;
+	padding: 0 0 20px 0 !important; 
+	position: relative;
+	border: none !important;
+	color: #212529 !important;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+	color: #114d4d !important;
+}
+
+.form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+/*Ovaj selektor trazi sve input elemente koji se nalaze unutar elementa koji ima klasu form-control i koji takodje ima i klasu success */
+
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 42px;
+    right: 4px;
+}
+
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+@media screen and (max-width:430px){
+	.seconderr{
+		bottom: -20px !important;
+	}
+}
+@media screen and (max-width:388px){
+	.firsterr{
+		bottom: auto !important;
+	}
+	.form-control:nth-of-type(1){
+		margin-bottom: 20px;
+	}
+}
+.form-control.error small {
+	visibility: visible;
+}
+
+.form [type='submit'] {
+	background-color: #49ADA1;;
+	border: 2px solid #114d4d;;
+	border-radius: 40px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+#text {
+	display: none;
+}
+#checkbox {
+	position: absolute;
+    top: 43px;
+    right: 20px;
+    width: 15px;
+}
+.submit{
+	cursor: pointer;
+}
+.submit:active{
+	background-color: #114d4d;
+}
